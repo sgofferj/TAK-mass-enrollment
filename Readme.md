@@ -143,7 +143,7 @@ source venv/bin/activate
 
 ## Support
 
-If you need support with installing or configuring the TAK server, please go to the ATAK subreddit
+If you need support installing or configuring the TAK server, please go to the ATAK subreddit
 or join the TAK Discord.
 
 If you have a question about the script or find a bug, please open an issue. Suggestions for improvements
