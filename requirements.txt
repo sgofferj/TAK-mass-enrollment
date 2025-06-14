@@ -1,0 +1,3 @@
+ requests
+ qrcode[pil]
+ markdown_pdf

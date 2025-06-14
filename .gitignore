@@ -1,0 +1,7 @@
+__pycache__
+venv
+*.pem
+*.zip
+*.csv
+test.*
+*.png
