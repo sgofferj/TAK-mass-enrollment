@@ -59,7 +59,8 @@ please open an issue and explain it. I'll add it later.
 - Make sure, you have at least Python 3.12, python-pip and python-venv installed
 - Clone or download the repository
 - Go to the repository and check main.py. On the top of the file, you'll find a line saying `import lang_xx as lang`.
-  Change this to whatever language you want to use, e.g. `import lang_en as lang`.
+  Change this to whatever language you want to use, e.g. `import lang_en as lang`. The language file needs to exist,
+  of course.
 - Next open a command line and go to the installation directory. Execute
   ```bash
   python -m venv venv
