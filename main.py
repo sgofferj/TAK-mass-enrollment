@@ -24,6 +24,10 @@ def main(server,api,cert,csvfile):
             groups = row[2].split(",")
             groupsIn = row[3].split(",")
             groupsOut = row[4].split(",")
+            if groupsIn == ['']:
+                groupsIn = []
+            if groupsOut == ['']:
+                groupsOut = []
             password = func.createPW()
             if tak.userExists(api,cert,user):
                 print(f"User '{user}' exists, skipping")
@@ -32,9 +36,7 @@ def main(server,api,cert,csvfile):
                 text +="<div class='creds'>\n"
                 text += f"<div class='secret'>{lang.txt_credentials} - {lang.txt_secret}</div>\n"
                 text += "<table>\n"
-                for group in groups:
-                    if tak.groupExists(api, cert, group):
-                        print(f"Group {group} exists")
+                print(groupsIn,groupsOut)
                 result = tak.createUser(api, cert, user, password, groups, groupsIn, groupsOut)
                 if result.status_code == 200:
                     print(f"User '{user}' created")
@@ -55,7 +57,7 @@ def main(server,api,cert,csvfile):
                 text += "</table>\n"
                 text += "</div>\n"
         pdf.add_section(Section(text), user_css = "h1 {font-size: 1.5em;} table {border-bottom: 1px solid black;} tr {width: 100%} td {padding: 0.5em;} .secret {color: red; font-size: 1em; font-weight: bold;} .creds {padding: 1em;} .instructions {font-size: 0.75em;} .group {font-size: 0.5em;}")
-    pdf.save("test.pdf")
+    pdf.save("enrollment-slips.pdf")
 
 def configParser():
     argumentList = sys.argv[1:]

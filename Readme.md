@@ -29,10 +29,7 @@ It will then check if a user already exists on the server. If so, it will skip u
 changing the password of a server admin user... If all is good, a secure randomly generated password
 is generated and the user is created on the server.
 
-Next, we check if the groups specified for the user already exist. If yes, we add the user to the groups.
-If not, we create the groups and then add the user to them. **I know this also has security implications**,
-but as the groups (to my knowledge) only influence CoT routing, it's not critical. Still, the server admin
-should manually check if any user is in a group where they don't belong.
+Groups are created by TAK server automatically if they don't exist, so no need to check there.
 
 In addition to creating the users, we create a PDF file which contains slips with the user's real name,
 username, QR codes for the ATAK Quick Connect function and some usage instructions. Those slips are ment
@@ -104,6 +101,8 @@ The first line of the CSV file is skipped, so you can leave a header line to rem
 
 Every user **must** have at least one own group, but the additional groups are optional. Multiple groups in a group
 field should be separated my **commas** while the fields are separated by **semicolons**.
+
+Every row also **must** have 5 columns. If a column is empty, add semicolons (max 4 per row, see examples).
 
 #### Examples
 
