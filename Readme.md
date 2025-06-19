@@ -109,7 +109,7 @@ Every row also **must** have 5 columns. If a column is empty, add semicolons (ma
 
 `Sample, Susan;susans;intelligence,humint;supervisors;incidents`
 
-Susan s a member of the groups intelligence and humint, she gets data from the group incidents and she can be seen
+Susan is a member of the groups intelligence and humint, she gets data from the group incidents and she can be seen
 by the supervisors group but she cannot see them.
 
 ```
