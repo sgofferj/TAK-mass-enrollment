@@ -99,8 +99,9 @@ The first line of the CSV file is skipped, so you can leave a header line to rem
 - `OUT groups` is a list of groups that the user should be able to see in addition to their own group but
   without sending any data to them. This could be e.g. feeders.
 
-Every user **must** have at least one own group, but the additional groups are optional. Multiple groups in a group
-field should be separated my **commas** while the fields are separated by **semicolons**.
+Every user **should** have at least one own group (otherwise, TAK server puts them in the **ANON** group automatically),
+but the additional groups are optional. Multiple groups in a group field should be separated by **commas** while the
+fields are separated by **semicolons**.
 
 Every row also **must** have 5 columns. If a column is empty, add semicolons (max 4 per row, see examples).
 
