@@ -3,5 +3,5 @@ venv
 *.pem
 *.zip
 *.csv
-test.*
+*.pdf
 *.png

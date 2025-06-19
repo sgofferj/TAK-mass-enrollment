@@ -1,4 +1,4 @@
-import lang_fi as lang
+import lang_en as lang
 import os
 import getopt, sys
 import takserver as tak
