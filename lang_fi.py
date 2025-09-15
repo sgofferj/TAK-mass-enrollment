@@ -1,4 +1,4 @@
-txt_secret = "Salassa pidettävä"
+txt_secret = "LUOTTAMUSELLINEN"
 txt_credentials = "Käyttäjätunnus"
-txt_instructions_header = "Ohjeet"
-txt_instructions_body = "Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula."
+txt_instructions_header = "Ohje"
+txt_instructions_body = "Tuo TAK-palvelinkohtainen sertifikaatti (CA certificate) Android-päätelaitteen ATAK-sovellukseen. Skannaa tämän jälkeen QR-koodi ja avaa linkki. ATAK pyytää lupaa yhdistää palvelimeen (Quick Connect)."

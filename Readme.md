@@ -128,6 +128,7 @@ The script takes the following parameters, all of which are mandatory
 - -c / --Cert <certificate file> - the path to the admin user certifcate in PEM format
 - -k / --Key <key file> - the path to the admin user certificate key file in PEM format
 - -f / --File <CSV file> - the path to the CSV file
+- --delete - deletes all users listed in the CSV from the server. Useful for cleanup, e.g. after an exercise
 
 ### venv
 
